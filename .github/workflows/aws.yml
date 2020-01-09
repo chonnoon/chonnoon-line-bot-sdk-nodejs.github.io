@@ -70,7 +70,7 @@ jobs:
       id: task-def
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
-        task-definition: first-run-task-definition:1.json
+        task-definition: first-run-task-definition.json
         container-name: sample-app
         image: ${{ steps.build-image.outputs.image }}
 
